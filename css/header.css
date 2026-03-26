@@ -1,0 +1,66 @@
+.hero-section {
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    padding-top: var(--ver-desk-pad);
+    padding-bottom: var(--ver-desk-pad);
+}
+
+.hero-wrapper {
+    display: flex;
+    /* елементи розташовані в колонку (зверху вниз) */
+    flex-direction: column;
+    /*вирівнювання елементів по ортогональній осі (cross axis) - горизонталі*/
+    align-items: center;
+    /* вирівнювання тексту по центру */
+    text-align: center;
+    /* властивість у flexbox, яка вказує елементу займати весь доступний вільний простір у контейнері */
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+
+/* центральний текстовий блок */
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-main h1 {
+    color: var(--color-white);
+}
+
+.hero-top h6 {
+    color: var(--color-medium-grey);
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+/* підзаголовок про скрол */
+.scroll-text {
+    color: var(--color-medium-grey);
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* нижня синя лінія */
+.hero-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 60px;
+    background-color: var(--color-blue);
+    opacity: 50%;
+}
+
+@media screen and (max-width: 680px) {
+    .hero-section {
+        padding-top: var(--ver-mob-pad);
+        padding-bottom: var(--ver-mob-pad);
+    }
+
+}

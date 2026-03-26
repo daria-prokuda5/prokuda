@@ -1,0 +1,55 @@
+.section-wrapper {
+    display: flex;
+    /* елементи розташовані в колонку (зверху вниз) */
+    flex-direction: column;
+    /* вирівнювання по основній осі(main axis) - вертикалі */
+    justify-content: center;
+    /*вирівнювання елементів по ортогональній осі (cross axis) - горизонталі*/
+    align-items: center;
+    /* вирівнювання тексту по центру */
+    text-align: center;
+    /* властивість у flexbox, яка вказує елементу займати весь доступний вільний простір у контейнері */
+    flex-grow: 1;
+    gap: 40px;
+    /* внутрішній відступ зверху */
+    padding-top: 40px;
+    /* внутрішній відступ знизу */
+    padding-bottom: 40px;
+}
+
+
+/* обмежувач ширини для тексту */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 700px;
+}
+
+
+
+/*треба доробити
+
+темний фон - білий текст
+.theme-dark {
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+
+}
+ темна тема - підзаголовок сірий 
+.theme-dark .subtitle {
+    color: var(--color-medium-grey);
+}
+
+ світлий фон - темний текст 
+.theme-light {
+    background-color: var(--color-milk);
+    color: var(--color-black);
+     Весь текст стає темним 
+}
+
+ підзаголовок у світлій темі стає синім 
+.theme-light .subtitle {
+    color: var(--color-blue);
+}
+    */

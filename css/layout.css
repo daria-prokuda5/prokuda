@@ -2,10 +2,16 @@
     --color-black: #000;
     --color-dark-grey: #1F1F1F;
     --color-medium-grey: #63686F;
+    --color-light-grey: #8A9099;
     --color-white: #fff;
     --color-light-blue: #E8ECF0;
     --color-milk: #F0F2F3;
     --color-blue: #6B93D6;
+    --color-blue-light: #7AA1E5;
+    --color-white-70: #ffffffb3;
+    --color-white-50: #ffffff80;
+    --color-white-15: #ffffff26;
+    --color-shadow: #6b93d626;
     --ipad-padding: 40px;
     --max-width: 1224px;
     --ver-desk-pad: 50px;
@@ -98,13 +104,4 @@ footer {
         padding-right: var(--mob-padding);
     }
 
-}
-
-
-.milk-section {
-    background-color: var(--color-milk);
-}
-
-.grey-section {
-    background-color: var(--color-dark-grey);
 }

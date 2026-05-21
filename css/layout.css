@@ -18,6 +18,7 @@
     --ver-mob-pad: 25px;
 }
 
+
 html,
 body {
     font-family: "Manrope", sans-serif;
@@ -76,6 +77,7 @@ h6 {
     letter-spacing: 0.05em;
     /* 16px */
 }
+
 
 header,
 section,

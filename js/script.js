@@ -86,3 +86,25 @@ window.addEventListener('keydown', (e) => {
         goToScreen(currentIndex - 1);
     }
 });
+
+/* анімація для появи тексту на базі GSAP
+  https://gsap.com/docs/v3/Plugins/ScrollTrigger/ */
+gsap.registerPlugin(ScrollTrigger);
+
+
+const elementsToAnimate = document.querySelectorAll('.animate-me');
+
+
+elementsToAnimate.forEach((item) => {
+    gsap.from(item, {
+        scrollTrigger: {
+            trigger: item,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+        },
+        opacity: 0,
+        y: 30,
+        duration: 2,
+        ease: "power2.out"
+    });
+});
